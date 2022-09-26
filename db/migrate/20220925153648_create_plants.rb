@@ -3,7 +3,7 @@ class CreatePlants < ActiveRecord::Migration[6.1]
     create_table :plants do |t|
       t.string :name
       t.string :image
-      t.decimal :price
+      t.integer :price
 
       t.timestamps
     end

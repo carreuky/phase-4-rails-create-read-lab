@@ -17,7 +17,7 @@ class PlantsController < ApplicationController
       end
 
     def create
-        plant = Plant.create(params.permit(:name, :image,))
+        plant = Plant.create(params.permit(:name, :image, :price))
         render json: plant, status: :created
     end
 
